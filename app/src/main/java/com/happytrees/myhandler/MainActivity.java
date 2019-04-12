@@ -34,7 +34,7 @@ public class MainActivity extends AppCompatActivity {
                count = count + 1;
                Log.e("COUNTER",count + " ");
 
-               //post to UI (main thread) through post method .without post method there will be CalledFromWrongThreadException
+               //post to UI (main thread) through Main Thread's Handler post method .without post method there will be CalledFromWrongThreadException
              numbers.post(new Runnable() {
                   @Override
                   public void run() {
